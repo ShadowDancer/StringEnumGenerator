@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>8.0</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <PropertyGroup>
+        <PackageId>StringEnumGenerator.Attributes</PackageId>
+        <Authors>Przemysław Onak</Authors>
+        <PackageProjectUrl>https://github.com/ShadowDancer/StringEnumGenerator</PackageProjectUrl>
+        <Description>
+            Contains metadata fro generator converting enums to/from string values.
+
+            StringEnumGenerator package is required for consuming metadata.
+        </Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+        <None Include="..\..\README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+    <PropertyGroup>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+</Project>

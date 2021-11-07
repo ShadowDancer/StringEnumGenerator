@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\StringEnumGenerator.Attributes\StringEnumGenerator.Attributes.csproj" />
+        <ProjectReference Include="..\..\src\StringEnumGenerator\StringEnumGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+    <PropertyGroup>
+        <CompilerGeneratedFilesOutputPath>GeneratedFiles</CompilerGeneratedFilesOutputPath>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Remove="GeneratedFiles\**" />
+        <None Include="GeneratedFiles\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="GeneratedFiles\StringEnumGenerator\StringEnumGenerator.SourceGenerator" />
+    </ItemGroup>
+</Project>
